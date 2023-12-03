@@ -7,7 +7,18 @@ const Home = () => {
       <>
          <Header></Header>
          <Outlet></Outlet>
-         <Toaster position="top-right" reverseOrder={false} />
+         <Toaster
+            position="top-right"
+            reverseOrder={false}
+            toastOptions={{
+               className: "",
+               style: {
+                  padding: "16px",
+                  color: "#333",
+                  fontSize: "1.6rem",
+               },
+            }}
+         />
       </>
    );
 };
