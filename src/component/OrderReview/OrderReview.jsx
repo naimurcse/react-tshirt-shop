@@ -4,11 +4,19 @@ import "./OrderReview.css";
 
 const OrderReview = () => {
    const tshirts = useLoaderData();
+
+   const addToCartHandler = (id) => {
+      console.log(id);
+   };
    return (
       <div className="container order-review">
          <div className="product-container">
             {tshirts.map((tshirt) => (
-               <Tshirt key={tshirt._id} tshirt={tshirt}></Tshirt>
+               <Tshirt
+                  key={tshirt._id}
+                  tshirt={tshirt}
+                  addToCartHandler={addToCartHandler}
+               ></Tshirt>
             ))}
          </div>
          <div className="cart-container">
