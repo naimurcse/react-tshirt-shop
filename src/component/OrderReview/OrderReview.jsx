@@ -2,13 +2,14 @@ import { useLoaderData } from "react-router-dom";
 import Tshirt from "../Tshirt/Tshirt";
 import "./OrderReview.css";
 import { useState } from "react";
+import Cart from "../Cart/Cart";
 
 const OrderReview = () => {
    const tshirts = useLoaderData();
    const [cart, setCart] = useState([]);
 
    const addToCartHandler = (product) => {
-      console.log(product);
+      //   console.log(product);
 
       let newCart = [];
       const existProduct = cart.find((item) => item._id === product._id);
@@ -23,7 +24,7 @@ const OrderReview = () => {
       }
       setCart(newCart);
    };
-   console.log(cart);
+   //    console.log(cart);
    return (
       <div className="container order-review">
          <div className="product-container">
@@ -37,6 +38,7 @@ const OrderReview = () => {
          </div>
          <div className="cart-container">
             <h2>Order summary</h2>
+            <Cart cart={cart}></Cart>
          </div>
       </div>
    );
