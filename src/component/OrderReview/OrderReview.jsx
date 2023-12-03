@@ -3,8 +3,11 @@ import Tshirt from "../Tshirt/Tshirt";
 import "./OrderReview.css";
 import { useState } from "react";
 import Cart from "../Cart/Cart";
+import toast from "react-hot-toast";
 
 const OrderReview = () => {
+   const notify = () => toast.success("Added new item.");
+
    const tshirts = useLoaderData();
    const [cart, setCart] = useState([]);
 
@@ -19,6 +22,7 @@ const OrderReview = () => {
          const remaining = cart.filter((item) => item._id !== product._id);
          newCart = [...remaining, existProduct];
       } else {
+         notify();
          product.quantity = 1;
          newCart = [...cart, product];
       }
