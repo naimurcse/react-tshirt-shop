@@ -8,7 +8,7 @@ const Tshirt = ({ tshirt, addToCartHandler }) => {
          <div className="product-details">
             <h2>{name}</h2>
             <p>Price: ${price}</p>
-            <button className="btn btn-blue" onClick={() => addToCartHandler(_id)}>
+            <button className="btn btn-blue" onClick={() => addToCartHandler(tshirt)}>
                Buy Now
             </button>
          </div>
