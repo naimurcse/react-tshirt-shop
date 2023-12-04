@@ -41,3 +41,15 @@ body {
    border: 1px solid rgb(0, 51, 255);
    color: rgb(0, 51, 255);
 }
+
+.area {
+   border: 2px solid red;
+   border-radius: 0.8rem;
+   padding: 2rem;
+}
+.area:not(.grandpa.area) {
+   margin: 1rem;
+}
+.area-flex {
+   display: flex;
+}
