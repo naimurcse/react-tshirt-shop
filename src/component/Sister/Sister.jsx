@@ -7,8 +7,8 @@ const Sister = ({ children }) => {
    const [balance, setBalance] = useContext(MoneyContext);
    return (
       <div className="area">
-         <h3>Sister</h3>
-         <p>{children}</p>
+         <p>Sister Component</p>
+         <h3>{children}</h3>
          {(children === "Setu" || children === "Sima") && (
             <p>
                Father's Balance: <span className="text-red">{balance}</span>

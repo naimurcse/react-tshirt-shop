@@ -7,8 +7,8 @@ const Brother = ({ children }) => {
 
    return (
       <div className="area">
-         <h3>Brother</h3>
-         <p>{children}</p>
+         <p>Brother Component</p>
+         <h3>{children}</h3>
          {(children === "Khuka" || children === "Melton") && (
             <p>
                Father's Balance: <span className="text-red">{money}</span>{" "}
