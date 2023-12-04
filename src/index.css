@@ -42,6 +42,17 @@ body {
    color: rgb(0, 51, 255);
 }
 
+.btn-warning {
+   background-color: rgb(255, 98, 0);
+   color: #fff;
+   border: 1px solid rgb(255, 98, 0);
+}
+.btn-warning:hover {
+   background-color: #fff;
+   border: 1px solid rgb(255, 98, 0);
+   color: rgb(255, 98, 0);
+}
+
 .area {
    border: 2px solid red;
    border-radius: 0.8rem;
