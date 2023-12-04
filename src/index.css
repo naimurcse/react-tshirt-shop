@@ -52,4 +52,5 @@ body {
 }
 .area-flex {
    display: flex;
+   flex-wrap: wrap;
 }
